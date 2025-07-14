@@ -1,7 +1,16 @@
 #myHeading{
-  margin-bottom: 40px;
+  margin: 15px;
+  font-weight:600;
 }
 
 .taskRow{
-  margin-bottom: 30px;
+  text-align: left;
+}
+
+.mybtn{
+  width: 80px;
+}
+
+.myrow{
+  margin: 8px 2px;
 }
