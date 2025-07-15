@@ -1,0 +1,8 @@
+.myContainer{
+  border: 2px solid rgb(15, 16, 15);
+  border-radius: 5px;
+  width: 350px;
+  margin: 30px 20px;
+  padding: 30px;
+  background-color: rgb(134, 129, 129);
+}

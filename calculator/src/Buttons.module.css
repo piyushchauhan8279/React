@@ -1,0 +1,8 @@
+.myBtn{
+  padding:30px;
+  margin: 10px;
+  background-color:rgb(246, 241, 234);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
