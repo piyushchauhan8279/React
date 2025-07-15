@@ -2,9 +2,9 @@ import FoodItems from "./FoodItems";
 let Food = ({ foodItems }) => {
   return (
     <>
-      <ul className="list-group">
+      <ul classNameName="list-group">
         {foodItems.map((item) => (
-          <FoodItems item={item} ></FoodItems>
+          <FoodItems item={item}></FoodItems>
         ))}
       </ul>
     </>

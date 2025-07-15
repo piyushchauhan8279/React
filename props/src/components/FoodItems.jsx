@@ -1,8 +1,8 @@
-import styles from './FoodItems.module.css'
+import styles from "./FoodItems.module.css";
 let FoodItems = ({ item }) => {
   return (
     <>
-      <li className={styles.myItems} key={item}>
+      <li classNameName={styles.myItems} key={item}>
         {item}
       </li>
     </>

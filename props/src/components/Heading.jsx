@@ -1,11 +1,11 @@
-import styles from './Heading.module.css'
+import styles from "./Heading.module.css";
 
 let Heading = () => {
   return (
     <>
-      <h1 className={styles.myHeading}>Healthy Food</h1>
+      <h1 classNameName={styles.myHeading}>Healthy Food</h1>
     </>
   );
 };
 
-export default Heading
+export default Heading;

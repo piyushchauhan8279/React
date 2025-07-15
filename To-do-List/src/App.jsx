@@ -1,18 +1,20 @@
-import './App.css'
-import AppName from './components/AppName';
-import AddTodo from './components/AddTodo';
-import TodoItem1 from './components/TodoItem1';
-import TodoItem2 from './components/TodoItem2';
+import "./App.css";
+import AppName from "./components/AppName";
+import AddTodo from "./components/AddTodo";
+import TodoItems from "./components/TodoItems"
 function App() {
-  // functional component
-
+  const tasks = [
+  { task: "DSA",      dueDate: "18-07-2025" },
+  { task: "MERN",     dueDate: "25-07-2025" },
+  { task: "Aptitude", dueDate: "25-07-2025" },
+  {task:"bgmi",dueDate:"20-07-2025"}
+];
   return (
     <>
       <center>
-        <AppName/>
-        <AddTodo/>
-        <TodoItem1/>
-        <TodoItem2/>
+        <AppName />
+        <AddTodo />
+        <TodoItems tasks={tasks}/>
       </center>
     </>
   );

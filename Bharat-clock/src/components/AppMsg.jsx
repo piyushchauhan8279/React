@@ -1,8 +1,9 @@
-function AppMsg(){
-  return <p className="lead">
-    This is the clock that shows the time in Bharat at all time 
-  </p>
+function AppMsg() {
+  return (
+    <p classNameName="lead">
+      This is the clock that shows the time in Bharat at all time
+    </p>
+  );
 }
 
-
-export default AppMsg
+export default AppMsg;
