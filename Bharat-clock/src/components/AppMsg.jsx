@@ -1,6 +1,6 @@
 function AppMsg() {
   return (
-    <p classNameName="lead">
+    <p className="lead">
       This is the clock that shows the time in Bharat at all time
     </p>
   );
