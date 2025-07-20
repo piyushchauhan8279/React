@@ -4,7 +4,7 @@ function TodoItems({ tasks,onClickBtn }) {
   return (
     <div className={`${styles.taskRow} container`}>
       {tasks.map((item) => (
-        <Item item={item} onClickBtn={onClickBtn} />
+        <Item item={item} key={item} onClickBtn={onClickBtn} />
       ))}
     </div>
   );
