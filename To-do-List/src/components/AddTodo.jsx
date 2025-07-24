@@ -1,46 +1,39 @@
 import styles from "./AddTodo.module.css";
-import { useState } from "react";
+import { useRef, useContext } from "react";
 import { IoMdAdd } from "react-icons/io";
-function AddTodo({ newTaskItem }) {
-  let [dueTask, setDuetask] = useState("");
-  let [dueDate, setDueDate] = useState("");
 
-  let handleDueTask = (event) => {
-    setDuetask(event.target.value);
-  };
-
-  let handleDueDate = (event) => {
-    setDueDate(event.target.value);
-  };
+import { TodoItemsContext } from "../store/todo-items-context";
+function AddTodo() {
+  const { newTaskItem } = useContext(TodoItemsContext);
+  let dueTaskEl = useRef();
+  let dueDateEl = useRef();
 
   let handleAddBtn = () => {
+    let dueTask = dueTaskEl.current.value;
+    let dueDate = dueDateEl.current.value;
     newTaskItem(dueTask, dueDate);
-    setDuetask("");
-    setDueDate("");
+
+    // Optional: Clear inputs after adding
+    dueTaskEl.current.value = "";
+    dueDateEl.current.value = "";
   };
 
   return (
     <div className={`${styles.taskRow} container`}>
       <div className={`${styles.myRow} row`}>
         <div className="col-6">
-          <input
-            type="text"
-            placeholder="Enter your Todo"
-            onChange={handleDueTask}
-            value={dueTask}
-          />
+          <input ref={dueTaskEl} type="text" placeholder="Enter your Todo" />
         </div>
         <div className="col-4">
-          <input type="date" onChange={handleDueDate} value={dueDate} />
+          <input ref={dueDateEl} type="date" />
         </div>
         <div className="col-2">
           <button
             type="button"
-            value={dueDate}
             className={`${styles.myBtn} btn btn-success`}
             onClick={handleAddBtn}
           >
-            <IoMdAdd/>
+            <IoMdAdd />
           </button>
         </div>
       </div>
