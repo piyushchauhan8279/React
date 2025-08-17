@@ -1,0 +1,16 @@
+.myDiv{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.myBtn{
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(161, 100, 219);
+  border: none;
+}
+
+.myBtn:hover{
+  cursor: pointer;
+}
