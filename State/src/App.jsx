@@ -5,8 +5,8 @@ function App() {
 
   return (
     <>
-     
-      <LikeButton></LikeButton>
+     <Counter></Counter>
+      {/* <LikeButton></LikeButton> */}
      
     </>
   )

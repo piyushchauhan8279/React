@@ -1,9 +1,16 @@
 import "./Counter.css";
 import { useState } from "react";
 export default function Counter() {
-  let [count, setCount] = useState(0);
+  function init(){
+    console.log('in init method');
+    return 0;
+  }
+  let [count, setCount] = useState(init);
   let handleBtnClick = () => {
-    setCount(count + 1);
+    setCount((currVal)=>{
+      return currVal+1;
+    });
+
     console.log(count);
   };
 
