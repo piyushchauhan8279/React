@@ -10,7 +10,6 @@ export default function Ludo() {
     setArr((prevMove)=>{
       console.log(prevMove);
       return [...prevMove,' GREEN MOVES  ']
-
     })
   };
   let handleBlue = () => {
