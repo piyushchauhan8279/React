@@ -7,6 +7,9 @@ export default function Item({ data ,handleDelete}) {
         <button onClick={handleDelete} style={{padding:"3px", color:"white",backgroundColor:"red",width:"44px",
 
         }}>Delete</button>
+
+        
+
       </div>
     </>
   );
