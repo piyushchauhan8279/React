@@ -52,7 +52,7 @@ export default function Form() {
           placeholder="Write your username"
           name="userName"
         />
-
+        
         <label htmlFor="password">password</label>
         <input
           id="password"
