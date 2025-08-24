@@ -8,7 +8,7 @@ import Weather from "./Weather.jsx";
 function App() {
   return (
     <>
-      <h2>Weather App</h2>
+      <h2 style={{color:"purple"}}>Weather App</h2>
       <Weather/>
       
     </>

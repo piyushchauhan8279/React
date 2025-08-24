@@ -72,7 +72,7 @@ export default function Search({ updateInfo }) {
           required
           value={text}
         />
-        <button type="submit">Search</button>
+        <button style={{backgroundColor:"greenyellow"}} type="submit">Search</button>
       </form>
 
       {err && (
